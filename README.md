@@ -34,6 +34,42 @@ Siga os passos abaixo para configurar e rodar a aplicação em sua máquina.
 Certifique-se de ter o **Python** instalado em seu sistema.
 
 ### 1. Clonar o repositório
-```bash
-git clone [https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git](https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git)
-cd SEU-REPOSITORIO
+```bash```
+git clone [https://github.com/Jegro777/Pipeline-dados-financeiros](https://github.com/Jegro777/Pipeline-dados-financeiros)
+cd Pipeline-dados-financeiros
+
+### 2. Instalar as dependências
+Instale os pacotes necessários (FastAPI, Uvicorn):
+
+Bash
+pip install fastapi uvicorn requests
+
+### 3. Executar o Back-end (API)
+Abra um terminal na pasta raiz do projeto e inicie o servidor da API com o Uvicorn:
+
+Bash
+uvicorn api:app --reload
+A API estará disponível em http://127.0.0.1:8000. Você pode testar a documentação interativa em http://127.0.0.1:8000/docs.
+
+### 4. Executar o Pipeline de Dados (ETL)
+Em outro terminal, execute o script responsável por alimentar o banco de dados SQLite:
+
+Bash
+python app.py
+
+### 5. Abrir o Dashboard
+Abra o arquivo index.html diretamente no seu navegador de preferência para visualizar o painel em tempo real atualizando as cotações.
+
+📌 Endpoints da API
+GET /api/cotacoes: Retorna uma lista contendo o registro mais recente (último ID) de cada moeda cadastrada, evitando duplicatas e otimizando a entrega ao front-end.
+
+👨‍💻 Autor
+Desenvolvido por Thiago Jesus.
+
+
+---
+
+### 📝 Descrição curta para a página principal do Repositório (About)
+
+> **Description:** Dashboard em tempo real para monitoramento de cotações de criptomoedas e câmbio, desenvolvido com Python, FastAPI, SQLite e JavaScript vanilla.
+> **Topics:** `fastapi`, `python`, `data-engineering`, `sqlite`, `dashboard`, `cryptocurrency`, `etl`
