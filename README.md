@@ -3,6 +3,9 @@
 > Um sistema full-stack leve de engenharia de dados para coleta automatizada (ETL), armazenamento local e exibição em tempo real de cotações de criptomoedas e taxas de câmbio.
 
 ---
+| | |
+|:---:|:---:|
+| <img src="frontend/img/preview_project.png" width="450"> | <img src="frontend/img/preview_project01.png" width="500"> |
 
 ## 🛠️ Tecnologias Utilizadas
 
